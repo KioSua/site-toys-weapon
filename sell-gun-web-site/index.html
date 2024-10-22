@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy weapon</title>
+    <link rel="shortcut icon" href="./block_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: linear-gradient(to right, grey, rgb(54, 54, 54));
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #text-welcome{
+            text-align: center;
+            font-size: medium;
+            background-image: url('./gun.png');
+            padding: 35px 15px;
+        }
+        
+        .main-container-block{
+            display: flexbox;
+            text-align: center;
+            background: black;
+            color: antiquewhite;
+            max-width: 70%;
+            height: 800px;
+            border-radius: 15px;
+        }
+        #list-text{
+            background-color: rgb(52, 52, 52);
+            border: 1px solid rgb(255, 0, 81);
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        .prewie-text{
+            margin-top: 15px;
+        }
+        
+        #gun-list{
+                flex-wrap: wrap;
+                display: flex;
+                margin-right: 15px;
+            }
+        .card{
+            background: linear-gradient(blue,purple);
+            width: 30%;
+            height: auto;
+            text-align: center;
+            margin-left: 1em;
+            border: 5px solid blue;
+            border-radius: 12px;
+            #price-text{
+                color: greenyellow;
+            }
+            #on-hand-text{
+                color: greenyellow;
+            }
+            
+            #image{
+                width: 300px;
+                height: 250px;
+                border-radius: 5px;
+            }
+        
+        }
+
+        .btn-add-to-cart{
+            background-color: rgb(17, 223, 17);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 15px;
+            border-radius: 10px;
+            top: -1em;
+            text-align: right;
+        }
+        .btn-add-to-cart:hover{
+            box-shadow: 0px 0px 25px greenyellow;
+            background-color: rgb(0, 255, 0);
+        }
+        
+        .after-buy{
+            position: absolute;
+            top: 0;
+            right: 20px;
+            width: 250px;
+            height: 150px;
+            background: gray;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+            border-radius: 15px;
+        }
+            
+        .input-text-area-cart{
+            width: 80px;
+            height: 30px;
+            resize: none;
+        }
+        .text-newCartItem{
+            background-color: rgb(255, 255, 255);
+            color: red;
+            text-align: center;
+            justify-content: center;
+            width: 200px;
+        }
+        .newCartItemText{
+            color: rgb(0, 255, 0);
+            background-color: aliceblue;
+            position: relative;
+            top: 100px;
+        }
+        #btnsignupId{
+            font-size: large;
+            text-align: right;
+            color: rgb(0, 0, 0);
+            background: linear-gradient(to right, blue, purple);
+            border-radius: 8px;
+        }
+        #btnsignupId:hover{
+            background-color: linear-gradient(to right, purple, blue);
+            box-shadow: 0px 0px 10px rgb(128, 0, 255);
+        }
+        .input-text{
+            color: white;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            border: 2px solid gray;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-text-and-image">
+            <button class="signupbtn" id="btnsignupId" ><a href="./signup.html">Signup</a></button>
+            <h1 id="text-welcome">Welcome, dear client, on this web-site we sell toys guns</h1>
+        </div>
+    </header>
+
+    <div class="main-container-block" id="gun-list">
+        <!--<div class="prewie-text">
+            <h1 id="list-text">List guns</h1>
+        </div>-->
+        <!--<div class="card">
+            <img id="image" src="./m4a16.webp" alt="">
+            <h1 id="gun-name">M4A16</h1>
+            <h3 id="price">Price: </h3>
+            <h2 id="price-text">1.000</h2>
+            <h4 id="on-hand">On hand: </h4>
+            <h4 id="on-hand-text">10</h4>
+            <button class="btn-add-to-cart">Add to end cart</button>
+         </div>-->
+        
+    </div>
+    <div class="after-buy">
+        <h2 id="cart">Shopping cart</h2>
+        <div class="newCartItemText">
+
+        </div>
+    </div>
+
+    
+    
+    <footer>
+    </footer>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
